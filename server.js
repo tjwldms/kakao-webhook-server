@@ -1,9 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const fetch = (...args) =>
-  import("node-fetch").then(({ default: fetch }) => fetch(...args));
-
 const app = express();
 app.use(bodyParser.json());
 
